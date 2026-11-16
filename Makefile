@@ -7,9 +7,13 @@ routes: routes.c
 test_routes: test_routes.c routes.c
 	$(CC) $(CFLAGS) -UNDEBUG test_routes.c -o test_routes
 
-.PHONY: test clean
-test: routes test_routes
+sanitize: test_routes.c routes.c
+	$(CC) -std=c11 -Wall -Wextra -g -fsanitize=address,undefined -UNDEBUG test_routes.c -o test_routes_san
+	./test_routes_san
+
+.PHONY: test sanitize clean
+test: routes test_routes sanitize
 	./test_routes
 
 clean:
-	rm -f routes test_routes
+	rm -f routes test_routes test_routes_san
