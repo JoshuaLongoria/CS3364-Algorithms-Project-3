@@ -1,19 +1,27 @@
 CC ?= cc
 CFLAGS ?= -std=c11 -Wall -Wextra -Wpedantic -O2
+LDFLAGS ?=
+LDLIBS ?=
 
-routes: routes.c
-	$(CC) $(CFLAGS) routes.c -o routes
+COMMON = graph.c shortest_paths.c
+HEADERS = graph.h shortest_paths.h
 
-test_routes: test_routes.c routes.c
-	$(CC) $(CFLAGS) -UNDEBUG test_routes.c -o test_routes
+.PHONY: all test sanitize clean
+all: routes
 
-sanitize: test_routes.c routes.c
-	$(CC) -std=c11 -Wall -Wextra -g -fsanitize=address,undefined -UNDEBUG test_routes.c -o test_routes_san
-	./test_routes_san
+routes: main.c $(COMMON) $(HEADERS)
+	$(CC) $(CFLAGS) main.c $(COMMON) $(LDFLAGS) $(LDLIBS) -o $@
 
-.PHONY: test sanitize clean
-test: routes test_routes sanitize
+test_routes: test_routes.c $(COMMON) $(HEADERS)
+	$(CC) $(CFLAGS) -UNDEBUG test_routes.c $(COMMON) $(LDFLAGS) $(LDLIBS) -o $@
+
+test: routes test_routes
 	./test_routes
 
+sanitize:
+	$(CC) -std=c11 -Wall -Wextra -Wpedantic -g -O1 -UNDEBUG -fsanitize=address,undefined -fno-omit-frame-pointer test_routes.c $(COMMON) -o test_routes_sanitized
+	./test_routes_sanitized
+
 clean:
-	rm -f routes test_routes test_routes_san
+	rm -f routes test_routes test_routes_sanitized
+
