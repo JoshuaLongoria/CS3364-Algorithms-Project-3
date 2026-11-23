@@ -17,7 +17,7 @@ and the problem is solved in two ways:
 | Member | Contributions |
 |---|---|
 | Joshua Longoria | _TODO_ |
-| Kylon Ford | _TODO_ |
+| Kylon Ford | Test Output and Sample Output |
 | Mason Womack | _TODO_ |
 | Marvin Stephens | _TODO_ |
 | Mia Troncoso | _TODO_ |
