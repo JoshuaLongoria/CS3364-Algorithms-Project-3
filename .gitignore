@@ -1,2 +1,15 @@
-﻿CMakeLists.txt
-Makefile
+﻿build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+
+*.o
+*.obj
+*.a
+*.exe
+routes
+test_routes
+test_routes_sanitized
