@@ -1,0 +1,47 @@
+After running:
+make
+.\routes.exe .\Campus.txt
+
+Dijkstra
+Bear Village Apt.: 640 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Brewer-Hegeman -> Bear Village Apt.
+Brewer-Hegeman: 290 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Brewer-Hegeman
+Oak Tree Apt.: 300 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Oak Tree Apt.
+New Business Building: 270 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building
+Maintenance College: 250 units | Computer Science -> Burdick -> Speech Language Hearing -> Maintenance College
+Speech Language Hearing: 130 units | Computer Science -> Burdick -> Speech Language Hearing
+Wingo: 220 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo
+Student Center: 240 units | Computer Science -> Torreyson Library -> Old Main -> Fine Art -> Student Center
+Student Health Center: 270 units | Computer Science -> Torreyson Library -> Prince Center -> Police Dept. -> Student Health Center
+Police Dept.: 170 units | Computer Science -> Torreyson Library -> Prince Center -> Police Dept.
+Fine Art: 160 units | Computer Science -> Torreyson Library -> Old Main -> Fine Art
+McALister Hall: 170 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall
+Old Main: 70 units | Computer Science -> Torreyson Library -> Old Main
+Prince Center: 70 units | Computer Science -> Torreyson Library -> Prince Center
+Torreyson Library: 40 units | Computer Science -> Torreyson Library
+Computer Science: 0 units | Computer Science
+Burdick: 30 units | Computer Science -> Burdick
+Lewis Science Center: 150 units | Computer Science -> Lewis Science Center
+College Square: 350 units | Computer Science -> Lewis Science Center -> College Square
+
+Bellman-Ford
+Bear Village Apt.: 640 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Brewer-Hegeman -> Bear Village Apt.
+Brewer-Hegeman: 290 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Brewer-Hegeman
+Oak Tree Apt.: 300 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building -> Oak Tree Apt.
+New Business Building: 270 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo -> New Business Building
+Maintenance College: 250 units | Computer Science -> Burdick -> Speech Language Hearing -> Maintenance College
+Speech Language Hearing: 130 units | Computer Science -> Burdick -> Speech Language Hearing
+Wingo: 220 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall -> Wingo
+Student Center: 240 units | Computer Science -> Torreyson Library -> Old Main -> Fine Art -> Student Center
+Student Health Center: 270 units | Computer Science -> Torreyson Library -> Prince Center -> Police Dept. -> Student Health Center
+Police Dept.: 170 units | Computer Science -> Torreyson Library -> Prince Center -> Police Dept.
+Fine Art: 160 units | Computer Science -> Torreyson Library -> Old Main -> Fine Art
+McALister Hall: 170 units | Computer Science -> Torreyson Library -> Old Main -> McALister Hall
+Old Main: 70 units | Computer Science -> Torreyson Library -> Old Main
+Prince Center: 70 units | Computer Science -> Torreyson Library -> Prince Center
+Torreyson Library: 40 units | Computer Science -> Torreyson Library
+Computer Science: 0 units | Computer Science
+Burdick: 30 units | Computer Science -> Burdick
+Lewis Science Center: 150 units | Computer Science -> Lewis Science Center
+College Square: 350 units | Computer Science -> Lewis Science Center -> College Square
+
+Both algorithms agree on all distances.
