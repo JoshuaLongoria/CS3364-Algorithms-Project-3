@@ -16,7 +16,7 @@ and the problem is solved in two ways:
 
 | Member | Contributions |
 |---|---|
-| Joshua Longoria | _TODO_ |
+| Joshua Longoria | Campus.txt and Readme |
 | Kylon Ford | Test Output and Sample Output |
 | Mason Womack | _TODO_ |
 | Marvin Stephens | _TODO_ |
