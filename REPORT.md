@@ -20,3 +20,5 @@ When the program is run, the file correctly compiles and prints out the results 
 
 
 ## Conclusion
+
+The output of our tests is consistent with what we expected from our experiments. From our tests, we can confirm that the algorithms can output routes between buildings and map the shortest path as well, Thus our algorithm has proven successful in its task.
