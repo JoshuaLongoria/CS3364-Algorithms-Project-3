@@ -1,0 +1,9 @@
+cc -std=c11 -Wall -Wextra -Wpedantic -g -O1 -UNDEBUG -fsanitize=address,undefined -fno-omit-frame-pointer test_routes.c graph.c shortest_paths.c -o test_routes_sanitized
+./test_routes_sanitized
+test_input.txt line 1: expected two distinct IDs (0–18) and a nonnegative weight.
+test_input.txt line 1: expected two distinct IDs (0–18) and a nonnegative weight.
+test_input.txt line 1: expected two distinct IDs (0–18) and a nonnegative weight.
+test_input.txt line 1: expected two distinct IDs (0–18) and a nonnegative weight.
+Passed 54 route cases against Floyd-Warshall and 4 invalid-input cases.
+
+Leak detection was disabled for this run because LeakSanitizer cannot run under this environment’s process tracing.
