@@ -13,7 +13,9 @@ The Bellman-Ford strategy is designed to take each level and find the shortest p
 
 ## Experiment
 
+We tested the algorithm with the tests in test_routes.c. The tests include testing for an empty edge file, duplicate edges, a known valid graph, 50 randomly generated graphs, and 4 invalid inputs. After running, test_routes.c printed that 54 of the tests worked perfectly, and the 4 invalid inputs were properly detected.
 
+When the program is run, the file correctly compiles and prints out the results found in SampleOutput.txt.
 
 
 
