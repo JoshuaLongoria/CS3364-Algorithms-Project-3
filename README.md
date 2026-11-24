@@ -20,7 +20,7 @@ and the problem is solved in two ways:
 | Kylon Ford | Test Output and Sample Output |
 | Mason Womack | _TODO_ |
 | Marvin Stephens | _TODO_ |
-| Mia Troncoso | _TODO_ |
+| Mia Troncoso | Coding and code revision |
 
 ---
 
